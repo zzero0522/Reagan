@@ -1,0 +1,7 @@
+.banner {
+  background-image: url("/images/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 75%;
+  text-align: center;
+}
