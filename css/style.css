@@ -1,3 +1,14 @@
 footer {
   background-color: rgb(170, 170, 170);
 }
+h2.info-head {
+  text-align: center;
+  background-color: bisque;
+}
+div.info-main {
+  text-align: left;
+  font-size: 2rem;
+}
+a.info-link {
+  color: blue;
+}
