@@ -12,3 +12,10 @@ h2.info-head {
 a.info-link {
   color: blue;
 }
+
+img.demo-img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
