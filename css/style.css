@@ -19,3 +19,6 @@ img.demo-img {
   border: 2px solid black;
   border-radius: 5px;
 }
+ol {
+  font-size: 2rem;
+}
