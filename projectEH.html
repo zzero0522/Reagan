@@ -6,7 +6,7 @@
     <link rel="short icon" href="./img/logo_transparent.png" />
     <!--自行補充-->
     <link rel="stylesheet" href="./css/style.css" />
-    <title>俊霖示範站</title>
+    <title>俊霖示範站-課指組系統</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -130,25 +130,110 @@
     <main>
       <div class="container">
         <h2>簡介：</h2>
-        <h3>
-          大學必修課「資料庫系統」時期的期末專案，其中我和林俊廷同學因參與校園社團/自治性組織活動，深知學校場地器材借用紙本登記的不便，以改善其為目標一同進行開發。<br /><br />
-          本系統於期末專案結束後，校方正式採用並上線持續運行約三年。<br /><br />
+        <p class="info-main">
+          大學必修課「資料庫系統」時期的期末專案，其中我和林俊廷同學因參與校園社團/自治性組織活動，深知學校場地器材借用紙本登記的不便，以改善其為目標一同進行開發。<br />
+          本系統於期末專案結束後，校方正式採用並上線持續運行約三年。<br />
           正式上線後經歷多次功能擴充及介面優化，在個人GitHub中僅展示最初期末專案時期由我負責開發的部分。
-        </h3>
+        </p>
       </div>
       <div class="container">
-        <img src="" alt="預覽圖" />
-      </div>
-
-      <div class="container">
-        <h2>說明：</h2>
-
+        <h3>&lt;預覽圖&gt;</h3>
+        <img class="demo-img" src="./img/EH.png" alt="預覽圖" />
+        <div class="info-main">
+          這個網站已經下線了，故僅提供截圖及簡介。
+          <br />
+          此為四人共同開發的專案，可以到我的github看我負責的部分喔！
+        </div>
         <a
           href="https://github.com/zzero0522/NTOU_EH_PHP"
           target="_blank"
           class="page-scroll btn btn-xl"
           >專案原始碼</a
         >
+      </div>
+
+      <div class="container">
+        <h2>說明：</h2>
+        <h3>&lt;專案架構及需求&gt;</h3>
+        <iframe
+          src="./file/EHDB.pdf"
+          frameborder="0"
+          width="100%"
+          height="1200px"
+        ></iframe>
+        <ul>
+          <li>其中我有參與「共通部分」及「器材、教室部分」</li>
+        </ul>
+        <h3>&lt;建立資料庫&gt;</h3>
+        <img class="demo-img" src="./img/EH_DB.png" alt="器材教室資料表" />
+        <!--基礎資料表簡介-->
+        <h4>equipment 所有器材</h4>
+        <img
+          class="demo-img"
+          src="./img/EH_equipment.png"
+          alt="equipment資料表"
+        />
+        <ul>
+          <li>equip_ID 器材編號</li>
+          <li>equip_name 器材名稱</li>
+          <li>equip_total 器材總數</li>
+          <li>equip_quantity 器材剩餘數</li>
+          <li>equip_date 器材登錄時間</li>
+        </ul>
+        <h4>classroom 所有教室</h4>
+        <img
+          class="demo-img"
+          src="./img/EH_classroom.png"
+          alt="classroom資料表"
+        />
+        <ul>
+          <li>room_ID 教室編號</li>
+          <li>room_name 教室名稱</li>
+          <li>room_status 教室狀態</li>
+          <li>room_date 教室登錄時間</li>
+        </ul>
+        <!--借用資料表簡介-->
+        <h4>lend_equip 借用中器材表</h4>
+        <img
+          class="demo-img"
+          src="./img/EH_lend_equip.png"
+          alt="lend_equip資料表"
+        />
+        <ul>
+          <li>user_ID 借用者編號</li>
+          <li>equip_ID 器材編號</li>
+          <li>lend_equip_ID 借用編號</li>
+          <li>lend_equip_quan 借出數量</li>
+          <li>lend_date 借用日期</li>
+          <li>lend_days 借用天數</li>
+        </ul>
+        <h4>lend_room 借用中教室表</h4>
+        <img
+          class="demo-img"
+          src="./img/EH_lend_room.png"
+          alt="lend_room資料表"
+        />
+        <ul>
+          <li>user_ID 借用者編號</li>
+          <li>room_ID 教室編號</li>
+          <li>lend_room_ID 借用編號</li>
+          <li>lend_date 借用日期</li>
+          <li>lend_time 借用時段</li>
+        </ul>
+        <!--使用者資料表-->
+        <h4>user 使用者表</h4>
+        <img class="demo-img" src="./img/EH_user.png" alt="user資料表" />
+        <ul>
+          <li>user_ID 使用者編號</li>
+          <li>user_number 使用者學號</li>
+          <li>user_pw 使用者密碼</li>
+          <li>user_nickname 使用者暱稱</li>
+          <li>user_email 使用者信箱</li>
+          <li>user_phone 使用者電話</li>
+          <li>user_department 使用者系所</li>
+          <li>user_level 使用者權限等級</li>
+          <li>user_date 使用者註冊日期</li>
+        </ul>
       </div>
     </main>
     <footer>
